@@ -11,6 +11,7 @@ const Filters = () => {
       company,
       category,
       color,
+      farmers_location,
       min_price,
       max_price,
       price,
@@ -23,6 +24,7 @@ const Filters = () => {
 
   const categories = getUniqueValues(all_products, 'category')
   const companies = getUniqueValues(all_products, 'company')
+  const farmers_locations = getUniqueValues(all_products, 'farmers_location')
   const colors = getUniqueValues(all_products, 'colors')
 
   return (
@@ -85,47 +87,17 @@ const Filters = () => {
           {/*end of  Company */}
           {/* Colors */}
           <div className='form-control'>
-            <h5>colors</h5>
-            {/* <div className='colors'>
-              {colors.map((c, index) => {
-                if (c === 'all') {
-                  return (
-                    <button
-                      name='color'
-                      onClick={updateFilters}
-                      data-color='all'
-                      className={`${
-                        color === 'all' ? 'all-btn active' : 'all-btn'
-                      }`}
-                      key={index}>
-                      all
-                    </button>
-                  )
-                }
-                return (
-                  <button
-                    key={index}
-                    name='color'
-                    // style={{ background: c }}
-                    className={`${
-                      color === c ? 'color-btn active' : 'color-btn'
-                    } `}
-                    data-color={c}
-                    onClick={updateFilters}>
-                    {color === c ? <>{color}</> : null}
-                  </button>
-                )
-              })}
-            </div> */}
+            <h5>Farmers Location</h5>
             <div>
-              {colors.map((c, index) => {
+              {farmers_locations.map((c, index) => {
                 return (
                   <button
                     key={index}
                     onClick={updateFilters}
                     type='button'
-                    name='colors'
-                    className={`${colors === c ? 'active' : null}`}>
+                    name='farmers_location'
+                    data-color={c}
+                    className={`${farmers_location === c ? 'active' : null}`}>
                     {c}
                   </button>
                 )

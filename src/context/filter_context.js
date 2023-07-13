@@ -23,6 +23,7 @@ const initialState = {
     company: 'all',
     category: 'all',
     color: 'all',
+    farmers_location: 'all',
     min_price: 0,
     max_price: 0,
     price: 0,
@@ -59,6 +60,9 @@ export const FilterProvider = ({ children }) => {
     let name = e.target.name
     let value = e.target.value
     if (name === 'category') {
+      value = e.target.textContent
+    }
+    if (name === 'farmers_location') {
       value = e.target.textContent
     }
     if (name === 'color') {

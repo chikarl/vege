@@ -11,5 +11,8 @@ export const getUniqueValues = (data, type) => {
   if (type === 'colors') {
     unique = unique.flat()
   }
+  if (type === 'farmers_location') {
+    unique = unique.flat()
+  }
   return ['all', ...new Set(unique)]
 }
