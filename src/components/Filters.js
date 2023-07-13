@@ -86,7 +86,7 @@ const Filters = () => {
           {/* Colors */}
           <div className='form-control'>
             <h5>colors</h5>
-            <div className='colors'>
+            {/* <div className='colors'>
               {colors.map((c, index) => {
                 if (c === 'all') {
                   return (
@@ -106,13 +106,27 @@ const Filters = () => {
                   <button
                     key={index}
                     name='color'
-                    style={{ background: c }}
+                    // style={{ background: c }}
                     className={`${
                       color === c ? 'color-btn active' : 'color-btn'
                     } `}
                     data-color={c}
                     onClick={updateFilters}>
-                    {color === c ? <FaCheck /> : null}
+                    {color === c ? <>{color}</> : null}
+                  </button>
+                )
+              })}
+            </div> */}
+            <div>
+              {colors.map((c, index) => {
+                return (
+                  <button
+                    key={index}
+                    onClick={updateFilters}
+                    type='button'
+                    name='colors'
+                    className={`${colors === c ? 'active' : null}`}>
+                    {c}
                   </button>
                 )
               })}

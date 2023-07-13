@@ -83,10 +83,13 @@ const filter_reducer = (state, action) => {
       )
     }
     //colors
+    // if (color != 'all') {
+    //   tempProducts = tempProducts.filter((product) => {
+    //     return product.colors.find((c) => c === color)
+    //   })
+    // }
     if (color != 'all') {
-      tempProducts = tempProducts.filter((product) => {
-        return product.colors.find((c) => c === color)
-      })
+      tempProducts = tempProducts.filter((product) => product.color === color)
     }
     //price
     tempProducts = tempProducts.filter((product) => product.price <= price)
