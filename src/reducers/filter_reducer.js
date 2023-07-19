@@ -60,7 +60,15 @@ const filter_reducer = (state, action) => {
   }
   if (action.type === FILTER_PRODUCTS) {
     const { all_products } = state
-    const { text, company, category, color, price, shipping } = state.filters
+    const {
+      text,
+      company,
+      category,
+      color,
+      farmers_location,
+      price,
+      shipping,
+    } = state.filters
     let tempProducts = [...all_products]
     //filtering
     // text
@@ -91,6 +99,13 @@ const filter_reducer = (state, action) => {
     if (color != 'all') {
       tempProducts = tempProducts.filter((product) => product.colors === color)
     }
+
+    if (farmers_location != 'all') {
+      tempProducts = tempProducts.filter(
+        (product) => product.farmers_location === farmers_location
+      )
+    }
+
     //price
     tempProducts = tempProducts.filter((product) => product.price <= price)
     //shipping

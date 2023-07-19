@@ -63,6 +63,8 @@ export const FilterProvider = ({ children }) => {
       value = e.target.textContent
     }
     if (name === 'farmers_location') {
+      console.log(name)
+      console.log(e.target.textContent)
       value = e.target.textContent
     }
     if (name === 'color') {

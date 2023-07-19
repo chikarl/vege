@@ -51,6 +51,7 @@ const SingleProductPage = () => {
     id: sku,
     company,
     images,
+    farmers_location,
   } = product
   return (
     <Wrapper>
@@ -73,6 +74,10 @@ const SingleProductPage = () => {
             <p className='info'>
               <span>SKU : </span>
               {sku}
+            </p>
+            <p className='info'>
+              <span>Location: </span>
+              {farmers_location}
             </p>
             <p className='info'>
               <span>Brand : </span>

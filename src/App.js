@@ -14,7 +14,7 @@ import PrivateRoutes from './utils/PrivateRoutes'
 import Profile from './pages/Profile'
 import Login from './pages/Login'
 import Register from './pages/Register'
-
+import Contact from './pages/Contact'
 import { AuthProvider } from './utils/AuthContext'
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
           <Route path='cart' element={<Cart />} />
           <Route path='products' element={<Products />} />
           <Route path='products/:id' element={<SingleProduct />} />
-
+          <Route path='/contact' element={<Contact />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
           <Route element={<PrivateRoutes />}>
