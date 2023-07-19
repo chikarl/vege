@@ -163,6 +163,13 @@ const CheckoutPage = () => {
   )
 }
 const Wrapper = styled.div`
+  .empty {
+    text-align: center;
+    h2 {
+      margin-bottom: 1rem;
+      text-transform: none;
+    }
+  }
   article {
     display: flex;
     flex-direction: column;
