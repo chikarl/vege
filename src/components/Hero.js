@@ -13,8 +13,8 @@ const Hero = () => {
           Comfort Zone
         </h1>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea esse
-          voluptates doloremque iusto repellendus tempora sunt iste dolore
+        We are here to help you provide healthy food, meaning, and a reason to gather in your workplace.
+ We can serve your needs or turn your dreams into a nourishing reality.
         </p>
         <Link to='/products' className='btn hero-btn'>
           Shop now

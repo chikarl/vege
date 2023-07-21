@@ -8,13 +8,12 @@ const Services = () => {
       <div className='section-center'>
         <article className='header'>
           <h3>
-            Custom furniture <br />
-            built only for you
+          Food That Works For  <br />
+          All Healthy Human beings
           </h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
-            iure cupiditate deserunt aliquid similique, quas adipisci architecto
-            ea in placeat.
+            Delivering farm-fresh fruits and vegetable with  100%
+             quality of product guaranteed for all customers.
           </p>
         </article>
         <div className='services-center'>
