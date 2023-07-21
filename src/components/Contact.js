@@ -8,8 +8,8 @@ const Contact = () => {
         <h3>Join our newletter and get 20% off</h3>
         <div className='content'>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed sit
-            aliquam magni nisi, rem itaque. Numquam voluptatum sequi cum autem!
+          We provide fresh fruits online and fresh vegetables online at your doorstep. We have a vast distribution network comprising of highly dedicated professionals coupled with strong logistics support,
+           establishing a nationwide reach
           </p>
           <form className='contact-form'>
             <input
