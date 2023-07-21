@@ -15,13 +15,12 @@ const AboutPage = () => {
             <div className='underline'></div>
           </div>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-            temporibus veniam, iure blanditiis tempore quibusdam repudiandae
-            quod itaque velit adipisci quis suscipit eos excepturi deserunt illo
-            expedita voluptatem dolorum? Odit provident dolore possimus ab nemo
-            atque debitis voluptatem recusandae, molestiae dignissimos optio
-            accusantium quis animi blanditiis voluptatibus accusamus rerum
-            voluptas.
+          Officially established in 2023
+           Keeping our roots intact, we represent the same passion for quality, service and values
+            that we were built on. 
+We have a vast distribution network comprising of highly dedicated professionals coupled with
+ strong logistics support, establishing a nationwide reach. Our scale of operation ensures that 
+ the fruits we supply ends up in millions of fruit bowls across the country.
           </p>
         </article>
       </Wrapper>
