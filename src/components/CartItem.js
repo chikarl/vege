@@ -24,7 +24,7 @@ const CartItem = ({ id, image, name, farmers_location, price, amount }) => {
       </div>
       <h5 className='price'>{formatPrice(price)}</h5>
       <AmountButtons amount={amount} increase={increase} decrease={decrease} />
-      <h5 className='subtotal'>{formatPrice(price + amount)}</h5>
+      <h5 className='subtotal'>{formatPrice(price * amount)}</h5>
       <button
         type='button'
         className='remove-btn'
