@@ -39,6 +39,6 @@ export const services = [
   },
 ]
 
-export const products_url = 'http://localhost:8888/api/offline_products'
+export const products_url = 'https://vege-api.netlify.app/api/products'
 
-export const single_product_url = `http://localhost:8888/api/offline_products?id=`
+export const single_product_url = `https://vege-api.netlify.app/api/singleproduct?id=`
